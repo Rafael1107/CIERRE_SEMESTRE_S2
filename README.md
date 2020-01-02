@@ -9,7 +9,7 @@ Para asegurarse hay que utilizar una variable TOTAL que sera la suma de los tres
 
 #######Pregunta 2#####
 
-set.seed parece estar ordenando los datos de una manera no clara, lo unico que logro visualizar es que la gran mayoria que se repite los ordena al final del conjunto. internet  por otro lado indica que asegura los numeros aleatorios para reproducciones futuras.
+set.seed parece estar ordenando los datos de una manera no clara, lo unico que logro visualizar es que la gran mayoria que se repite los ordena al final del conjunto. Internet  por otro lado indica que asegura los numeros aleatorios para reproducciones futuras es decir establece una base de numeros aleatores que van a ser siempre los mismos para futuras pruebas estadisticas.
 
 ############Pregunta 3#################
 
@@ -17,4 +17,16 @@ Realice los pasos anteriores utilizando el set.seed(66) y lo compare con el calc
 Por otro lado la consideracion o no de los neutros tiene un impacto en la visualizacion de la diferencia entre las opiniones extremas, si se utiliza los neutrales la diferencia entre Positivo y Negativo es de 9%, si los neutros no son considerados la diferencia es de 12% aproximadamente.
 
 ##########Pregunta 4##################
+
+Para este ejercicio se dejan de contar los numeros y se empieza a contar conjuntos de numeros designados de la siguiente manera y utilizando el mismo meteodo anterior solo que ahora simplificado en una variable denominada "Cuenta"
+n_Mas1<-c(2:6)
+n_Menos1<-c("A","J","Q","K",10)
+n_neutros<-c(7:9)
+Cuenta<-0
+
+######################Pregunta 5 ####################
+
+En el ejercicio anterior, aplique el Set.Seed y me entrego exactamente el mismo numero de "Cuenta" que era igual a -2, esto muestra que la probabilidad de que ocurra el mismo procedimiento es el mismo, incluso si se utiliza set.seed.
+
+######################Pregunta 6 ####################
 

@@ -1,6 +1,7 @@
 DesarrolloPreguntas.R
 #########################EJERCICIO 1 ####################################
 ##########################################################################
+set.seed(66)
 Ejemplos=sample(c("Positivo","Negativo","Neutros"),100,replace=TRUE)
 #################Contando los Positivos################
 n_positivos<-0
@@ -26,13 +27,34 @@ Ejemplos=sample(c("Positivo","Negativo","Neutros"),10,replace=TRUE)
 set.seed(10)
 #########################EJERCICIO 3 ####################################
 ##########################################################################
-Ejemplos=sample(c("Positivo","Negativo","Neutros"),63,replace=TRUE)
+Ejemplos=sample(c("Positivo","Negativo","Neutros"),10,replace=TRUE)
 set.seed(66)
 # Se ejecuta lo anterior mas lo realizado en el ejercicio uno para obtener los numeros de positivos, negativos y neutros
 Porcentajes_incluye_neutros<-c(n_negativos/TOTAL,n_positivos/TOTAL,n_neutros/TOTAL)
 Porcentajes_no_neutros<-c(n_negativos/(TOTAL-n_neutros),n_positivos/(TOTAL-n_neutros))
 
-#########################EJERCICIO 3 ####################################
+#########################EJERCICIO 4 y 5 ####################################
 ##########################################################################
 Cartas_Sacadas=sample(c("A",2:10,"J","Q","K"),31,replace=TRUE)
+set.seed(31)
+n_Mas1<-c(2:6)
+n_Menos1<-c("A","J","Q","K",10)
+n_neutros<-c(7:9)
+Cuenta<-0
+for (i in 1:length(Cartas_Sacadas)){
+  if(Cartas_Sacadas[i]==n_Mas1) {
+    Cuenta<-Cuenta+1 } else if (Cartas_Sacadas[i]==n_Menos1){
+      Cuenta<-Cuenta-1} else if (Cartas_Sacadas[i]==n_neutros){
+        Cuenta<-Cuenta+0
+      }
+}
 
+#########################EJERCICIO 6 ####################################
+##########################################################################
+
+read.table("articulo1.txt",
+ header=FALSE,
+ sep="",
+ stringsAsFactors = FALSE)
+
+ 
