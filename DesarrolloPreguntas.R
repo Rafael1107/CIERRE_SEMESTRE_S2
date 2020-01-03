@@ -35,7 +35,7 @@ Porcentajes_no_neutros<-c(n_negativos/(TOTAL-n_neutros),n_positivos/(TOTAL-n_neu
 
 #########################EJERCICIO 4 y 5 ####################################
 ##########################################################################
-Cartas_Sacadas=sample(c("A",2:10,"J","Q","K"),5,replace=TRUE)
+Cartas_Sacadas=sample(c("A",2:10,"J","Q","K"),31,replace=TRUE)
 set.seed(31)
 Cuenta<-0
 for (i in 1:length(Cartas_Sacadas)){
