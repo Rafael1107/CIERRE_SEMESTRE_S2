@@ -35,20 +35,16 @@ Porcentajes_no_neutros<-c(n_negativos/(TOTAL-n_neutros),n_positivos/(TOTAL-n_neu
 
 #########################EJERCICIO 4 y 5 ####################################
 ##########################################################################
-Cartas_Sacadas=sample(c("A",2:10,"J","Q","K"),31,replace=TRUE)
+Cartas_Sacadas=sample(c("A",2:10,"J","Q","K"),5,replace=TRUE)
 set.seed(31)
-n_Mas1<-c(2:6)
-n_Menos1<-c("A","J","Q","K",10)
-n_neutros<-c(7:9)
 Cuenta<-0
 for (i in 1:length(Cartas_Sacadas)){
-  if(Cartas_Sacadas[i]==n_Mas1) {
-    Cuenta<-Cuenta+1 } else if (Cartas_Sacadas[i]==n_Menos1){
-      Cuenta<-Cuenta-1} else if (Cartas_Sacadas[i]==n_neutros){
+  if(Cartas_Sacadas[i]==2|Cartas_Sacadas[i]==3|Cartas_Sacadas[i]==4|Cartas_Sacadas[i]==5|Cartas_Sacadas[i]==6) {
+    Cuenta<-Cuenta+1 } else if (Cartas_Sacadas[i]=="A"|Cartas_Sacadas[i]=="J"|Cartas_Sacadas[i]=="Q"|Cartas_Sacadas[i]=="K"|Cartas_Sacadas[i]==10){
+      Cuenta<-Cuenta-1} else if (Cartas_Sacadas[i]==7|Cartas_Sacadas[i]==8|Cartas_Sacadas[i]==9){
         Cuenta<-Cuenta+0
       }
 }
-
 #########################EJERCICIO 6 ####################################
 ##########################################################################
 

@@ -18,11 +18,8 @@ Por otro lado la consideracion o no de los neutros tiene un impacto en la visual
 
 ##########Pregunta 4##################
 
-Para este ejercicio se dejan de contar los numeros y se empieza a contar conjuntos de numeros designados de la siguiente manera y utilizando el mismo meteodo anterior solo que ahora simplificado en una variable denominada "Cuenta"
-n_Mas1<-c(2:6)
-n_Menos1<-c("A","J","Q","K",10)
-n_neutros<-c(7:9)
-Cuenta<-0
+Para este ejercicio se dejan de contar los numeros y se empieza a contar conjuntos de numeros designados, esto a traves de la funcion si y de el simbolo | que significa "o" permite llevar la cuenta utilizando una variable denominada cuenta que aumenta o disminiye en 1 unidad dependiendo de las cartas que salgan.
+
 
 ######################Pregunta 5 ####################
 
