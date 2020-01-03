@@ -18,12 +18,12 @@ Por otro lado la consideracion o no de los neutros tiene un impacto en la visual
 
 ##########Pregunta 4##################
 
-Para este ejercicio se dejan de contar los numeros y se empieza a contar conjuntos de numeros designados, esto a traves de la funcion si y de el simbolo | que significa "o" permite llevar la cuenta utilizando una variable denominada cuenta que aumenta o disminiye en 1 unidad dependiendo de las cartas que salgan.
+Para este ejercicio se dejan de contar los numeros y se empieza a contar conjuntos de numeros designados, esto a traves de la funcion si y de el simbolo | que significa "o" permite llevar la cuenta utilizando una variable denominada cuenta que aumenta o disminiye en 1 unidad dependiendo de las cartas que salgan. La cuenta final es -13.
 
 
 ######################Pregunta 5 ####################
 
-En el ejercicio anterior, aplique el Set.Seed y me entrego exactamente el mismo numero de "Cuenta" que era igual a -2, esto muestra que la probabilidad de que ocurra el mismo procedimiento es el mismo, incluso si se utiliza set.seed.
+En el ejercicio anterior, aplique el Set.Seed y me entrego exactamente el mismo numero de "Cuenta" que era igual a -13, esto muestra que la probabilidad de que ocurra el mismo procedimiento es el mismo, incluso si se utiliza set.seed, es decir se mantiene la aleatoriedad.
 
 ######################Pregunta 6 ####################
 

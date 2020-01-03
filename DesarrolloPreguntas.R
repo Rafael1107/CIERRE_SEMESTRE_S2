@@ -47,10 +47,15 @@ for (i in 1:length(Cartas_Sacadas)){
 }
 #########################EJERCICIO 6 ####################################
 ##########################################################################
+library(tm)
+library(SnowballC)
+library(wordcloud)
+library(ggplot2)
+library(dplyr)
+library(readr)
+library(cluster)
 
-read.table("articulo1.txt",
- header=FALSE,
- sep="",
- stringsAsFactors = FALSE)
 
- 
+texto<-read_lines("articulo1.txt")
+texto2<-read_lines("articulo2.txt")
+
