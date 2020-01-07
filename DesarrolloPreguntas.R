@@ -1,7 +1,6 @@
 DesarrolloPreguntas.R
 #########################EJERCICIO 1 ####################################
 ##########################################################################
-set.seed(66)
 Ejemplos=sample(c("Positivo","Negativo","Neutros"),100,replace=TRUE)
 #################Contando los Positivos################
 n_positivos<-0
@@ -45,17 +44,35 @@ for (i in 1:length(Cartas_Sacadas)){
         Cuenta<-Cuenta+0
       }
 }
+
 #########################EJERCICIO 6 ####################################
 ##########################################################################
-library(tm)
-library(SnowballC)
+setwd("C:\Users\Rafae\Documents\CIERRE_SEMESTRE_S2")
+#SE NECESITAN LOS PAQUETES 
+
+library(tm) 
 library(wordcloud)
 library(ggplot2)
-library(dplyr)
-library(readr)
-library(cluster)
+library(reshape2)
+#Reconocimiento de Archivos
+textos=VCorpus(DirSource("Textos",encoding="UTF-8"),readerControl =list(language="spa"))
+inspect(textos)
+writeLines(as.character(textos[[1]]))
+writeLines(as.character(textos[[2]]))
 
 
-texto<-read_lines("articulo1.txt")
-texto2<-read_lines("articulo2.txt")
+#Colocando en formato de tabla
+tdm<-TermDocumentMatrix(textos,
+                        control=list(stopwords=T,
+                        removePunctuation=T,
+                        removeNumbers=T,
+                        steming=T))
 
+matrix_tdm<-melt(as.matrix(tdm),value.name="Count")
+head(matrix_tdm)
+
+##################################### METODO2 ###############################################
+path = "C:/Users/Rafae/Documents/CIERRE_SEMESTRE_S2"
+setwd("C:/Users/Rafae/Documents/CIERRE_SEMESTRE_S2")
+dir = DirSource(paste(path,"pos/",sep=""), encoding = "UTF-8")
+corpus = Corpus(dir)
