@@ -24,6 +24,7 @@ Para este ejercicio se dejan de contar los numeros y se empieza a contar conjunt
 ######################Pregunta 5 ####################
 
 En el ejercicio anterior, aplique el Set.Seed y me entrego exactamente el mismo numero de "Cuenta" que era igual a -13, esto muestra que la probabilidad de que ocurra el mismo procedimiento es el mismo, incluso si se utiliza set.seed, es decir se mantiene la aleatoriedad.
+Tecnicamente todas las cartas tienen la misma probabilidad de salir, en este caso el set.seed(31) le entrega mas posibilidad a salir al grupo de cartas altas puesto que la cuenta queda en -13.
 
 ######################Pregunta 6 ####################
 
