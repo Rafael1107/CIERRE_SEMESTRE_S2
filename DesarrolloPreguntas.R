@@ -44,7 +44,19 @@ for (i in 1:length(Cartas_Sacadas)){
         Cuenta<-Cuenta+0
       }
 }
-
+# Ahora lo realice con 2 ford de manera variable.
+mas1<-c(2:6)
+menos1<-c("A","J","Q","K",10)
+neutros<-c(7:9)
+cuenta2<-0
+variable<-mas1
+for (i in 1:length(Cartas_Sacadas)){ for (n in 1:length(variable)){
+  if(Cartas_Sacadas[i]==mas1[n]){cuenta2<-cuenta2+1}}
+  variable<-menos1
+  for(n in 1:length(variable)){
+    if(Cartas_Sacadas[i]==menos1[n]){cuenta2<-cuenta2-1}
+  }
+}
 #########################EJERCICIO 6 ####################################
 ##########################################################################
 setwd("C:\Users\Rafae\Documents\CIERRE_SEMESTRE_S2")
